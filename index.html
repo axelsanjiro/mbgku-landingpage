@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MBGku - Transparansi, Kualitas, Partisipasi</title>
+    <meta name="description" content="Platform terintegrasi untuk transparansi distribusi, verifikasi QR, dan pelaporan kualitas makanan program MBG.">
+     Tailwind Play CDN 
+    <script src="https://cdn.tailwindcss.com"></script>
+     design tokens & smooth scroll 
+    <style>
+      :root {
+        /* 3-5 color system */
+        --bg: #f8fafc;         /* slate-50 */
+        --fg: #0f172a;         /* slate-900 */
+        --muted: #e2e8f0;      /* slate-200 */
+        --primary: #16a34a;    /* emerald-600 */
+        --accent: #f59e0b;     /* amber-500 */
+      }
+      html { scroll-behavior: smooth; }
+      body { background: var(--bg); color: var(--fg); }
+    </style>
+    <script>
+      // Tailwind config (optional extensions)
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: 'var(--bg)',
+              fg: 'var(--fg)',
+              muted: 'var(--muted)',
+              primary: 'var(--primary)',
+              accent: 'var(--accent)',
+            },
+            boxShadow: {
+              card: '0 6px 24px rgba(15,23,42,0.06)',
+              cardHover: '0 12px 36px rgba(15,23,42,0.10)',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+     Entry 
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
